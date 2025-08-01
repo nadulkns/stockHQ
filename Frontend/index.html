@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-    <title>Stock Analysis Dashboard</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+        <title>StockHQ</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
-    <!-- box icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
-  </head>
+        <!-- box icons -->
+        <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet" />
 
-  <body>
-    <header class="header">
-      <a href="#" class="logo"
-        >Stock Analysis Dashboard<span class="animate" style="--i: 1"></span
-      ></a>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+    </head>
 
-      <div class="bx bx-menu" id="menu-icon">
-        <span class="animate" style="--i: 2"></span>
-      </div>
+    <body>
+        <header class="header">
+        <a href="#" class="logo"
+            >Stock<span class="hq">HQ</span
+            ><span class="animate" style="--i: 1"></span
+        ></a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#sm">Stock Markets</a>
-        <a href="#pr">Predictions</a>
-        <a href="#sr">Strategy Recommendations</a>
-        <a href="#about">About</a>
+        <div class="bx bx-menu" id="menu-icon">
+            <span class="animate" style="--i: 2"></span>
+        </div>
 
-        <span class="active-nav"></span>
-        <span class="animate" style="--i: 2"></span>
-      </nav>
-    </header>
-  </body>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#sm">Stock Markets</a>
+            <a href="#pr">Predictions</a>
+            <a href="#sr">Strategy Recommendations</a>
+            <a href="#about">About</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i: 2"></span>
+        </nav>
+        </header>
+
+        <!-- home page design -->
+        <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to Stock<span>HQ</span></h1>
+            <p>
+            Your all-in-one hub for intelligent stock market analysis and
+            personalized investment strategies.
+            </p>
+        </div>
+        </section>
+
+        <!-- stock markets section design -->
+        <section class="sm" id="sm">
+            <h2 class="heading">Major <span>Stock Markets</span></h2>
+
+            <div class="about-content">
+                <div class="btn-box">
+                    <a href="#" class="btn"><span class="fi fi-us"></span> NASDQ</a>
+                    <a href="#" class="btn"><span class="fi fi-us"></span> NYSE</a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+
+    </body>
 </html>
