@@ -255,6 +255,8 @@ class StockForecaster:
         try:
             ticker = yf.Ticker(self.symbol)
             info = ticker.info
+            
+        
 
             print(f"\n{self.symbol} Stock Information:")
             print(f"Company: {info.get('longName', 'N/A')}")
