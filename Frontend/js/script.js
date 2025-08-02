@@ -139,3 +139,29 @@ resetBtn.addEventListener('click', (e) => {
     // Scroll to Home section
     document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
 });
+
+
+document.querySelector('.prediction-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    const response = await fetch('/predict', {
+        method: 'POST',
+        body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.error) {
+        alert(result.error);
+    } else {
+        const output = `
+            <h3>${result.symbol} Forecast</h3>
+            <p>Current Price: $${result.current_price}</p>
+            <p>Predicted (in ${formData.get('predict_days')} days): $${result.predicted_price}</p>
+            <p>Change: $${result.change} (${result.percent}%)</p>
+        `;
+        document.getElementById('result').innerHTML = output;
+    }
+});
