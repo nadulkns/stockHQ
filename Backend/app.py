@@ -1,7 +1,16 @@
+import sys
+import os
+
 from flask import Flask,render_template,request,jsonify
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Model')))
 from model import StockForecaster
 
-app = Flask(__name__)
+frontend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Frontend'))
+
+app = Flask(__name__,
+    template_folder=frontend_path,
+    static_folder=os.path.join(frontend_path))
 
 @app.route('/')
 def home():
