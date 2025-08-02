@@ -103,6 +103,53 @@
             </form>
         </section>
 
+        <!-- strategy recommendation section design -->
+        <section class="strategy" id="sr">
+            <h2 class="heading">Strategy <span>Recommendation</span></h2>
+
+            <form class="strategy-form" action="#" method="POST">
+                <div class="input-box">
+                    <label for="stock-symbol">Stock Symbol</label>
+                    <input type="text" id="stock-symbol" name="stock-symbol" placeholder="e.g. AAPL, TSLA, AMZN" required />
+                </div>
+
+                <div class="input-box">
+                    <label for="strategy">Investment Strategy</label>
+                    <select id="strategy" name="strategy" required>
+                        <option value="">Select Strategy</option>
+                        <option value="value">Value Investing</option>
+                        <option value="growth">Growth Investing</option>
+                        <option value="income">Income Investing</option>
+                        <option value="momentum">Momentum Investing</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="risk">Risk Type</label>
+                    <select id="risk" name="risk" required>
+                        <option value="">Select Risk Type</option>
+                        <option value="low">Low Risk</option>
+                        <option value="medium">Medium Risk</option>
+                        <option value="high">High Risk</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="horizon">Time Horizon</label>
+                    <select id="horizon" name="horizon" required>
+                        <option value="">Select Time Horizon</option>
+                        <option value="short">Short Term</option>
+                        <option value="long">Long Term</option>
+                    </select>
+                </div>
+
+                <div class="submit-box">
+                    <button type="submit" class="btn">Get Strategy Recommendation</button>
+                </div>
+            </form>
+        </section>
+
+
 
 
     </body>

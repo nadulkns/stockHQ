@@ -30,18 +30,18 @@ body{
     color: var(--text-color);
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    background: transparent;
+    padding: 1rem 9%; 
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: .3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -89,6 +89,7 @@ body{
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+    scroll-margin-top: 8rem;
 }
 
 .home {
@@ -235,6 +236,73 @@ section {
 }
 
 .prediction-form .btn:hover {
+    background: var(--text-color);
+    color: var(--main-color);
+}
+
+.strategy {
+    background: var(--bg-color);
+    padding: 8rem 9% 5rem;
+}
+
+.strategy .heading span {
+    color: var(--main-color);
+}
+
+.strategy-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.strategy-form .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.strategy-form .input-box label {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.strategy-form .input-box input,
+.strategy-form .input-box select {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--main-color);
+    border-radius: 0.6rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.strategy-form .submit-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.strategy-form .btn {
+    height: 4.6rem;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    background: var(--main-color);
+    border: none;
+    border-radius: 0.6rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.strategy-form .btn:hover {
     background: var(--text-color);
     color: var(--main-color);
 }
