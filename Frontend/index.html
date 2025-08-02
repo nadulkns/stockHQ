@@ -15,6 +15,7 @@
 
         <!-- flag icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+
     </head>
 
     <body>
@@ -55,19 +56,54 @@
         <section class="sm" id="sm">
             <h2 class="heading">Major <span>Stock Markets</span></h2>
 
-            <div class="about-content">
-                <div class="btn-box">
-                    <a href="#" class="btn"><span class="fi fi-us"></span> NASDQ</a>
-                    <a href="#" class="btn"><span class="fi fi-us"></span> NYSE</a>
-                </div>
-
-
+            <div class="sm-content">
+                <a href="#" class="btn"><span class="fi fi-us"></span> NASDAQ</a>
+                <a href="#" class="btn"><span class="fi fi-us"></span> NYSE</a>
+                <a href="#" class="btn"><span class="fi fi-cn"></span> Shanghai</a>
+                <a href="#" class="btn"><span class="fi fi-jp"></span> Tokyo</a>
             </div>
 
-
-
+            <div class="sm-content">
+                <a href="#" class="btn"><span class="fi fi-gb"></span> London</a>
+                <a href="#" class="btn"><span class="fi fi-in"></span> NSE</a>
+                <a href="#" class="btn"><span class="fi fi-in"></span> Bombay</a>
+                <a href="#" class="btn"><span class="fi fi-eu"></span> Euronext</a>
+            </div>
 
         </section>
+
+        <!-- prediction section design -->
+        <section class="prediction" id="pr">
+            <h2 class="heading">Stock <span>Prediction</span></h2>
+
+            <form class="prediction-form" action="#" method="POST">
+                <div class="input-box">
+                    <label for="symbol">Stock Symbol</label>
+                    <input type="text" id="symbol" name="symbol" placeholder="e.g. AAPL, TSLA, MSFT" required />
+                </div>
+
+                <div class="input-box">
+                    <label for="period">Data Period</label>
+                    <input type="text" id="period" name="period" placeholder="e.g. 1y, 6mo, 2y" required />
+                </div>
+
+                <div class="input-box">
+                    <label for="predict_days">Prediction Days</label>
+                    <input type="number" id="predict_days" name="predict_days" placeholder="e.g. 7, 30, 60" required />
+                </div>
+
+                <div class="input-box">
+                    <label for="epochs">Training Epochs</label>
+                    <input type="number" id="epochs" name="epochs" placeholder="e.g. 50, 100" required />
+                </div>
+
+                <div class="submit-box">
+                    <button type="submit" class="btn">Predict</button>
+                </div>
+            </form>
+        </section>
+
+
 
     </body>
 </html>
