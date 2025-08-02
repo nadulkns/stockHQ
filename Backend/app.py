@@ -36,7 +36,7 @@ def predict():
             'predicted_price': round(future_price, 2),
             'change': round(change, 2),
             'percent': round(percent, 2),
-            'future': future.to_dict(orient='records')  # for plotting
+            'future': future.to_dict(orient='records')  
         })
 
     except Exception as e:
