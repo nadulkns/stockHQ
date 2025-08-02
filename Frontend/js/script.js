@@ -59,10 +59,10 @@ function blockAccessIfNoMarket(e) {
 }
 
 // Block navbar links to prediction and strategy sections
-const restrictedNavLinks = document.querySelectorAll('.navbar a[href="#pr"], .navbar a[href="#sr"]');
-restrictedNavLinks.forEach(link => {
-    link.addEventListener('click', blockAccessIfNoMarket);
-});
+// const restrictedNavLinks = document.querySelectorAll('.navbar a[href="#pr"], .navbar a[href="#sr"]');
+// restrictedNavLinks.forEach(link => {
+//     link.addEventListener('click', blockAccessIfNoMarket);
+// });
 
 // Handle market selection
 marketButtons.forEach(button => {
